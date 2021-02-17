@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<body>
+<hr>assignment<hr>
+<p id="suma"></p>
+
+    <script>
+        var i = 10;
+        i += 5;
+        document.getElementById("suma").innerHTML = i;
+    </script>
+<p id="resta"></p>
+
+    <script>
+        var i = 10;
+        i -= 5;
+        document.getElementById("resta").innerHTML = i;
+    </script>
+
+<p id="multiplicar"></p>
+
+    <script>
+        var i = 10;
+        i *= 5;
+        document.getElementById("multiplicar").innerHTML = i;
+    </script>
+
+<p id="dividir"></p>
+
+    <script>
+        var i = 10;
+        i /= 5;
+        document.getElementById("dividir").innerHTML = i;
+    </script>
+
+<p id="porcentaje"></p>
+
+    <script>
+        var i = 90;
+        i %= 50;
+        document.getElementById("porcentaje").innerHTML = i;
+    </script>
+
+<hr>functions<hr>
+
+        <p>resultado ejemplo</p>
+
+        <p id="mul"></p>
+
+        <script>
+                function myFunction(p1, p2) {
+                return p1 * p2;
+                }
+                document.getElementById("mul").innerHTML = myFunction(4, 3);
+        </script>
+
+        <p>This example calls a function which performs a calculation and returns the result:</p>
+
+        <p id="mult"></p>
+
+        <script>
+            var a = myFunction(8, 4);
+            document.getElementById("mult").innerHTML = a;
+
+            function myFunction(a, b) {
+            return a * b;
+            }
+        </script>
+
+            <p>ejemplo</p>
+            <p id="div"></p>
+
+            <script>
+                function toCelsius(fa) {
+                return (5/9) * (fa-32);
+                }
+                document.getElementById("div").innerHTML = toCelsius(80);
+            </script>
+
+    <p>resultado</p>
+    <p id="divi"></p>
+
+    <script>
+            function miro(f) {
+            return (8/10) * (f-80);
+            }
+            document.getElementById("divi").innerHTML = miro;
+    </script>
+    
+    <p id="ok"></p>
+
+        <script>
+            document.getElementById("ok").innerHTML =
+            "la temperatura es " + toCelsius(77) + " Celsius";
+
+            function toCelsius(fahrenheit) {
+            return (5/9) * (fahrenheit-35);
+            } 
+        </script>
+
+<p>ejemplo final</p>
+
+    <p id="demo1"></p>
+
+    <p id="demo2"></p>
+
+<script>
+            myFunction();
+
+            function myFunction() {
+            var carName = "carro";
+            document.getElementById("demo1").innerHTML =
+            typeof carName + " " + carName;
+            }
+
+            document.getElementById("demo2").innerHTML =
+            typeof carName ;
+</script>
+
+
+<hr>objects<hr>
+
+    <p id="col"></p>
+
+    <script>
+    // Create and display a variable:
+        var car = "amarrillo";
+        document.getElementById("col").innerHTML = car;
+    </script>
+
+    <p id="demo"></p>
+
+<script>
+// Create an objectos:
+var car = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "el carro tiene descripcion" +" " + car.type +" "+  car.model + " "+ car.color ;
+</script>
+
+<p id="ini"></p>
+
+    <script>
+        // Create an object:
+        var person = {firstName:"giovany", lastName:"chalapud", age:27, eyeColor:"cafes"};
+
+        // Display some data from the object:
+        document.getElementById("ini").innerHTML =
+        person.firstName + " "+ person.lastName + " tiene " + person.age + "años" + " " + person.eyeColor;
+    </script>
+
+<p id="dem"></p>
+
+        <script>
+                // Create an object:
+                var person = {
+                firstName: "giovany ",
+                lastName : "chalapud",
+                id     :  27
+                };
+                // Display some data from the object:
+                document.getElementById("dem").innerHTML =
+                person["firstName"] + " " + person["lastName"] + " " + "tiene" + " " + person["id"];
+        </script>
+
+    <p id="jum"></p>
+
+    <script>
+        // Create an object:
+        var person = {
+        firstName: "giovany",
+        lastName : "chalapud pedraza",
+        id     : 80,
+        fullName : function() {
+            return this.firstName + " " + this.lastName + " edad " + this.id ;
+        }
+        };
+        // Display data from the object:
+        document.getElementById("jum").innerHTML = person.fullName();
+        alert(person.firstName);
+    </script>
+
+
+
+<hr>arrays<hr>
+    <p id="o"></p>
+
+    <script>
+        var cars = ["chevrolet", "Volvo", "BMW"];
+        document.getElementById("o").innerHTML = cars;
+    </script>
+
+<p id="age"></p>
+
+<script>
+    var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+    ];
+    document.getElementById("age").innerHTML = cars;
+</script>
+
+    <p id="p"></p>
+
+    <script>
+        var cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("p").innerHTML = cars[1];
+    </script>
+
+    <p id="y"></p>
+
+    <script>
+        var cars = ["Saab", "Volvo", "BMW"];
+        cars[2] = "prueba";
+        document.getElementById("y").innerHTML = cars;
+    </script>
+
+    <p id="l"></p>
+
+    <script>
+        var person = ["giovany", "chalapud", 27];
+        document.getElementById("l").innerHTML = person[2];
+    </script>
+
+    <p id="gio"></p>
+
+    <script>
+        var person = {firstName:"prueva", lastName:"chalapud", age:46};
+        document.getElementById("gio").innerHTML = person["firstName"];
+        
+    </script>
+    <p id="fi"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("fi").innerHTML = fruits.length;
+    </script>
+
+    <p id="que"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var first = fruits[2];
+        document.getElementById("que").innerHTML = first;
+    </script>
+
+    <p id="foca"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var last = fruits[fruits.length-3];
+        document.getElementById("foca").innerHTML = last;
+    </script>
+
+    <p id="fruta"></p>
+
+    <script>
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+
+        text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("fruta").innerHTML = text;
+    </script>
+
+    <p id="frut1"></p>
+
+    <script>
+        var fruits, text;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("frut1").innerHTML = text;
+
+        function myFunction(value) {
+        text += "<li>" + value + "</li>";
+        } 
+    </script>
+
+    <p id="frutas"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("frutas").innerHTML = fruits;
+
+        function myFunction() {
+        fruits.push("Lemon");
+        document.getElementById("frutas").innerHTML = fruits;
+        }
+    </script>
+    <button onclick="myFunction()">agregar</button>
+    
+    <p id="dedo"></p>
+
+    <script>
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits[6] = "Lemon";
+
+        fLen = fruits.length;
+        text = "";
+        for (i = 0; i < fLen; i++) {
+        text += fruits[i] + "<br>";
+        }
+        document.getElementById("dedo").innerHTML = text;
+    </script>
+
+    <p id="wil"></p>
+
+    <script>
+        var person = [];
+        person[0] = "John";
+        person[1] = "Doe";
+        person[2] = 46; 
+        document.getElementById("wil").innerHTML =
+        person[0] + " " + person[1]+  " " +  person.length;
+    </script>
+
+    <p id="num"></p>
+
+    <script>
+        //var points = new Array(40, 100, 1, 5, 25, 10);
+        var points = [40, 100, 1, 5, 25, 10];
+        document.getElementById("num").innerHTML = points[1];  
+    </script>
+
+    <p id="obj"></p>
+
+    <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("obj").innerHTML = typeof fruits;
+    </script>
+
+    <p id="verd"></p>
+
+    <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("verd").innerHTML = Array.isArray(fruits);
+    </script>
+
+    <p id="ojo"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("ojo").innerHTML = isArray(fruits);
+
+        function isArray(myArray) {
+        return myArray.constructor.toString().indexOf("Array") > -1;
+        }
+    </script>
+
+    <p id="dani"></p>
+
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("dani").innerHTML = fruits instanceof Array;
+    </script>
+</body>
+
+
+</body>
+</html>
